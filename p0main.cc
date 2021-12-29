@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 		std::cout << "1 - Ej 1\n";
 		std::cout << "2 - Ej 2\n";
 		std::cout << "3 - Ej 3\n";
+		std::cout << "4 - Ej 4\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -49,6 +50,13 @@ int main(int argc, char **argv)
 				std::cout << "Introduce altura del triángulo: ";
 				std::cin >> n;
 				triangle(n);
+				break;
+				
+			case 4:
+				n=0;
+				std::cout << "Introduce posición nº primo: ";
+				std::cin >> n;
+				std::cout << nPrime(n) << "\n";
 				break;
 				
 			default:

@@ -67,3 +67,38 @@ void triangle(int n){
 	return;
 }
 
+/** Comprueba si un número es primo. Devuelve 'true' si es primo, 
+ *  o 'false' en caso contrario
+ **/
+ bool isPrime(int n){
+	 int count = 0;
+	 bool isPrime = true;
+	 if(n<2){
+		 return false;
+	 }
+	 else{
+		 for(count=n-1;count>1;count--){
+			 if(n%count==0){
+				 isPrime=false;
+				 break;
+			 }
+		 }
+		 return isPrime;
+	 }
+ }
+
+//  4
+/** Dado un número 'n' devuelve el n-ésimo nº primo
+ **/
+ int nPrime(int n){
+	 int count=0;
+	 int ret=0;
+	 int oldPrime = 0;
+	 for(count=0;count<n;count++){
+		 oldPrime=ret;
+		 while(!isPrime(ret)||ret==oldPrime){
+			 ret++;
+		 }
+	 }
+	 return ret;
+ } 

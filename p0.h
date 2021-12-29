@@ -10,4 +10,8 @@ int printPairs(int v[], int maxV);
 
 void triangle(int n);
 
+bool isPrime(int n);
+
+int nPrime(int n);
+
 #endif
