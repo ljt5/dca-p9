@@ -18,3 +18,24 @@ bool multiple2or5not30(int n){
 	else
 		return false;
 }
+
+//  2
+/** Imprime en pantalla los números pares de un vector 'v[]' hasta que
+ *  llega a un 51. Devuelve el número de pares que ha impreso por
+ *  pantalla. Debe usar un único 'for' o 'while' y terminar el bucle con
+ *  una variable booleana
+ **/
+int printPairs(int v[], int maxV){
+	bool reached51 = false;
+	int ret = 0;
+	for(int count=0;count<maxV&&!reached51;count++){
+		if(v[count]==51){
+			reached51=true;
+		}
+		else if(v[count]%2==0){
+			ret++;
+		}
+	}
+	return ret;
+}
+
