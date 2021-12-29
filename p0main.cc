@@ -12,6 +12,7 @@ int main(int argc, char **argv)
 		std::cout << "3 - Ej 3\n";
 		std::cout << "4 - Ej 4\n";
 		std::cout << "5 - Ej 5\n";
+		std::cout << "6 - Ej 6\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -65,6 +66,26 @@ int main(int argc, char **argv)
 				std::cout << "Introduce nº a descomponer: ";
 				std::cin >> n;
 				deco(n);
+				break;
+				
+			case 6:{
+				std::cout <<"Introduce el nº de elementos del vector:";
+				std::cin >> maxV;
+				int v[maxV];
+				int iv[maxV];
+				for(cont=0;cont<maxV;cont++){
+					std::cout <<"Introduce elemento nº"<< cont<< ": ";
+					std::cin >> v[cont];
+				}
+				for(int i=0;i<maxV;i++){
+					iv[i]=0;
+				}
+				std::cout << odds(v, maxV, iv) << "\n";
+				for(cont=0;cont<maxV;cont++){
+					std::cout << iv[cont]<< " ";
+				}
+				std::cout << "\n";
+			}
 				break;
 				
 			default:

@@ -132,3 +132,25 @@ void deco(int n){
 	return;
 }
 
+//  6
+/** Obtiene los números impares del vector 'v' y los almacena en 'iv'.
+ *  Devuelve la cantidad de números impares encontrados. Además, 'n' es
+ *  el número de elementos de los vectores 'v' y 'iv'
+ **/
+int odds(int v[], int n, int iv[]){
+	int count=0;
+	int ret=0;
+	int ivPosition=0;
+	for(count=0;count<n;count++){
+		iv[count]=0;
+	}
+	for(count=0;count<n;count++){
+		if(v[count]%2!=0){
+			iv[ivPosition]=v[count];
+			ivPosition++;
+			ret++;
+		}
+	}
+	return ret;
+}
+

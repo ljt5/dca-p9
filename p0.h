@@ -16,5 +16,6 @@ int nPrime(int n);
 
 void deco(int n);
 
+int odds(int v[], int n, int iv[]);
 
 #endif
