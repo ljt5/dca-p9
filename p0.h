@@ -8,4 +8,6 @@ bool multiple2or5not30(int n);
 
 int printPairs(int v[], int maxV);
 
+void triangle(int n);
+
 #endif

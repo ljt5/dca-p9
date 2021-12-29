@@ -9,6 +9,7 @@ int main(int argc, char **argv)
 	while(ej!=0){
 		std::cout << "1 - Ej 1\n";
 		std::cout << "2 - Ej 2\n";
+		std::cout << "3 - Ej 3\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -41,6 +42,13 @@ int main(int argc, char **argv)
 				std::cout <<"]\n";
 				std::cout << "nº pares: "<< printPairs(vector, maxV)<<"\n";
 			}
+				break;
+				
+			case 3:
+				n=0;
+				std::cout << "Introduce altura del triángulo: ";
+				std::cin >> n;
+				triangle(n);
 				break;
 				
 			default:

@@ -39,3 +39,31 @@ int printPairs(int v[], int maxV){
 	return ret;
 }
 
+//  3
+/** Imprime un triángulo de altura 'n' como en los ejemplos.
+ **/
+void triangle(int n){
+	int i=0;
+	int j=0;
+	if(n<0){
+		return;
+	}
+	for(i=1;i<n;i++){
+		std::cout <<"*";
+		for(j=1;j<i;j++){
+			if(j!=i-1){
+				std::cout <<" ";
+			}
+			else{
+				std::cout <<"*";
+			}
+		}
+		std::cout <<"\n";
+	}
+	for(i=0;i<n;i++){
+		std::cout <<"*";
+	}
+	std::cout <<"\n";
+	return;
+}
+
