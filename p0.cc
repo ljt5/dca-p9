@@ -29,7 +29,10 @@ int printPairs(int v[], int maxV){
 	bool reached51 = false;
 	int ret = 0;
 	for(int count=0;count<maxV&&!reached51;count++){
-		if(v[count]%2==0){
+		if(v[count]==51){
+			reached51=true;
+		}
+		else if(v[count]%2==0){
 			ret++;
 		}
 	}
