@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 		std::cout << "2 - Ej 2\n";
 		std::cout << "3 - Ej 3\n";
 		std::cout << "4 - Ej 4\n";
+		std::cout << "5 - Ej 5\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -57,6 +58,13 @@ int main(int argc, char **argv)
 				std::cout << "Introduce posición nº primo: ";
 				std::cin >> n;
 				std::cout << nPrime(n) << "\n";
+				break;
+				
+			case 5:
+				n=0;
+				std::cout << "Introduce nº a descomponer: ";
+				std::cin >> n;
+				deco(n);
 				break;
 				
 			default:

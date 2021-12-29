@@ -14,4 +14,7 @@ bool isPrime(int n);
 
 int nPrime(int n);
 
+void deco(int n);
+
+
 #endif

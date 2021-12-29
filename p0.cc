@@ -29,10 +29,7 @@ int printPairs(int v[], int maxV){
 	bool reached51 = false;
 	int ret = 0;
 	for(int count=0;count<maxV&&!reached51;count++){
-		if(v[count]==51){
-			reached51=true;
-		}
-		else if(v[count]%2==0){
+		if(v[count]%2==0){
 			ret++;
 		}
 	}
@@ -102,3 +99,36 @@ void triangle(int n){
 	 }
 	 return ret;
  } 
+ 
+ //  5 
+/** Dado un número entero positivo imprime la descomposición del nº en
+ *  factores primos
+ **/ 
+void deco(int n){
+	int count=0;
+	if(n<0){
+		std::cout << "Error\n";
+	}
+	else if(isPrime(n)){
+		std::cout << n << " ";
+	}
+	else if(n==0){
+		std::cout << "0 ";
+	}
+	else if(n==1){
+		std::cout << "1 ";
+	}
+	else{
+		while(n!=1){
+			for(count=1;nPrime(count)<=n;count++){
+				if(n%nPrime(count)==0){
+					n=n/nPrime(count);
+					std::cout << nPrime(count) << " ";
+					break;
+				}
+			}
+		}
+	}
+	return;
+}
+
