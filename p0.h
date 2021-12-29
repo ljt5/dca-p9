@@ -20,4 +20,6 @@ int odds(int v[], int n, int iv[]);
 
 int search(char a[], char b[]);
 
+int subs(char cad[], char c, char sus[]);
+
 #endif

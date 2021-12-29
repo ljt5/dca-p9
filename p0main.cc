@@ -8,6 +8,9 @@ int main(int argc, char **argv)
 	int cont=0;
 	char a[]="berenjena\0";
 	char b[]="hola\0";
+	char cad[100];
+	char c='n';
+	char sus[]="hola";
 	while(ej!=0){
 		std::cout << "1 - Ej 1\n";
 		std::cout << "2 - Ej 2\n";
@@ -16,6 +19,7 @@ int main(int argc, char **argv)
 		std::cout << "5 - Ej 5\n";
 		std::cout << "6 - Ej 6\n";
 		std::cout << "7 - Ej 7\n";
+		std::cout << "8 - Ej 8\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -93,6 +97,20 @@ int main(int argc, char **argv)
 				
 			case 7:
 				std::cout << search(a,b) << "\n";
+				break;
+				
+			case 8:
+				std::cout << "Introduce la cadena: ";
+				std::cin >> cad;
+				std::cout << "\n";
+				std::cout << "Introduce el caracter: ";
+				std::cin >> c;
+				std::cout << "\n";
+				std::cout << "Introduce la sustituta: ";
+				std::cin >> sus;
+				std::cout << "\n";
+				std::cout << "Longitud cad: " << strlen(cad) << "\n";
+				subs(cad,c,sus);
 				break;
 				
 			default:
