@@ -6,6 +6,8 @@ int main(int argc, char **argv)
 	int n=0;
 	int maxV=0;
 	int cont=0;
+	char a[]="berenjena\0";
+	char b[]="hola\0";
 	while(ej!=0){
 		std::cout << "1 - Ej 1\n";
 		std::cout << "2 - Ej 2\n";
@@ -13,6 +15,7 @@ int main(int argc, char **argv)
 		std::cout << "4 - Ej 4\n";
 		std::cout << "5 - Ej 5\n";
 		std::cout << "6 - Ej 6\n";
+		std::cout << "7 - Ej 7\n";
 		std::cout << "0 - Salir\n";
 		std::cout << "Introduce el Ej: ";
 		std::cin >> ej;
@@ -86,6 +89,10 @@ int main(int argc, char **argv)
 				}
 				std::cout << "\n";
 			}
+				break;
+				
+			case 7:
+				std::cout << search(a,b) << "\n";
 				break;
 				
 			default:

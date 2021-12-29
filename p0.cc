@@ -154,3 +154,40 @@ int odds(int v[], int n, int iv[]){
 	return ret;
 }
 
+//  7
+/** Encuentra la primera aparición de la cadena 'b' en la cadena 'a' y
+ *  devuelve su posición
+ **/
+int search(char a[], char b[]){
+	unsigned int counta=0;
+	unsigned int countb=0;
+	int ret=-2;
+	if(strlen(b)>strlen(a)){
+		return -1;
+	}
+	else{
+		for(counta=0;counta<strlen(a);counta++){
+			if(a[counta]==b[0]){
+				for(countb=1;countb<strlen(b);countb++){
+					if(a[counta+countb]!=b[countb]){
+						ret=-1;
+					}
+				}
+				if(ret!=-1){
+					ret=counta;
+				}
+			}
+			if(ret>=0){
+				break;
+			}
+			else{
+				ret=-2;//El valor vuelve a ser -2 para evitar problemas
+			}
+		}
+		if(ret<0){
+			ret=-1;
+		}
+		return ret;
+	}
+}
+

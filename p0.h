@@ -18,4 +18,6 @@ void deco(int n);
 
 int odds(int v[], int n, int iv[]);
 
+int search(char a[], char b[]);
+
 #endif
